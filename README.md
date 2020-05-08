@@ -1,7 +1,14 @@
 wm_removal_webservice
 ==============================
 
-A small WM removal project
+A small watermark removal preoject. 
+
+A U-Net with ResNet-34 pre-trained encoder trained to remove watermark from images.
+
+Dataset- OxFord Pet Images from https://www.robots.ox.ac.uk/~vgg/data/pets/. An Alpha channel watermark is added to all images to create the training dataset.
+
+Model Architecture - A Dynamic U-Net from FastAI with ResNet34 encoder trained on "Watermarked" images. For Dynamic UNet implementational details see https://github.com/fastai/fastai/blob/master/fastai/vision/models/unet.py#L37.
+
 
 Project Organization
 ------------
