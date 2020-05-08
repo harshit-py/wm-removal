@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>Image Watermark removal model as a Flask API</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <h1>Image Watermark removal: UNet with ResNet34 Encoder Model</h1>
+    <form action="/prediction" method="post" enctype="multipart/form-data">
+      <input type="file" name="image" value="Upload">
+      <input type="submit" value="Predict">
+    </form>
+    <form action="/addwatermark" method="post" enctype="multipart/form-data">
+      <input type="file" name="image" value="Upload">
+      <input type="submit" value="Add Watermark">
+    </form>
+</body>
